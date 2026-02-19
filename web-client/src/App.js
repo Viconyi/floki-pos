@@ -39,6 +39,7 @@ function SignInModal({ open, onClose, onSignIn }) {
     <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: '#0007', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ background: '#fff', borderRadius: 24, boxShadow: '0 8px 32px #0003', padding: '2.5rem 2rem', minWidth: 340, maxWidth: 400, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
         <button onClick={onClose} style={{ position: 'absolute', top: 18, right: 18, background: 'none', border: 'none', fontSize: 24, color: '#888', cursor: 'pointer' }}>&times;</button>
+        <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 80, margin: '0 auto 18px', display: 'block' }} />
         <h2 style={{ color: '#1a2236', fontWeight: 700, fontSize: 28, marginBottom: 18 }}>Sign In</h2>
         <form onSubmit={e => { e.preventDefault(); onSignIn(email, pin); }} style={{ width: '100%' }}>
           <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required style={{ ...inputStyle }} />
@@ -475,6 +476,7 @@ function SignInPage({ onSignIn, onSignUp, onResetPin }) {
     }}>
       <div style={{ color: '#1a2236', fontWeight: 800, fontSize: 30, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', textAlign: 'center' }}>Floki's</div>
       <div style={cardStyle}>
+        <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 80, margin: '0 auto 18px', display: 'block' }} />
         <div style={titleStyle}>{mode === 'signin' ? 'Login' : mode === 'signup' ? 'Register' : 'Reset PIN'}</div>
         <form onSubmit={submit}>
           {mode === 'signup' && !awaitingCode && (

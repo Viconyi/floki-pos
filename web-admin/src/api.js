@@ -3,7 +3,7 @@ const jsonHeaders = { 'Content-Type': 'application/json' };
 
 function resolveUrl(url) {
   if (/^https?:\/\//i.test(url)) return url;
-  const base = process.env.REACT_APP_API_BASE || 'http://localhost:5000';
+  const base = process.env.REACT_APP_API_BASE || window.location.origin;
   if (url.startsWith('/')) return base + url;
   return base + '/' + url;
 }

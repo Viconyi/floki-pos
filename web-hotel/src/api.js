@@ -18,7 +18,7 @@ function getAuthToken() {
 let errorHandler = null;
 export function setApiErrorHandler(fn) { errorHandler = fn; }
 
-const API_BASE = process.env.REACT_APP_API_BASE || '';
+const API_BASE = process.env.REACT_APP_API_BASE || window.location.origin;
 
 function resolveUrl(url) {
   if (/^https?:\/\//i.test(url)) return url;

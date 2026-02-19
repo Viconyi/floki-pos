@@ -9,7 +9,8 @@ function Track({ trackOrders, setTrackOrders, config }) {
   const [deliveryRating, setDeliveryRating] = React.useState({ stars: 0, comment: '' });
   const socketRef = React.useRef(null);
   React.useEffect(() => {
-    const socket = io('http://localhost:5000');
+    const apiBase = process.env.REACT_APP_API_BASE || window.location.origin;
+    const socket = io(apiBase);
     socketRef.current = socket;
     socket.on('orderStatusUpdate', (data) => {
       setTrackOrders(prev => prev.map(o => o.id === data.orderId ? { ...o, status: data.status, etaMinutes: data.etaMinutes ?? o.etaMinutes, driver: data.driver || o.driver, servedByName: data.servedByName || o.servedByName } : o));

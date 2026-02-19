@@ -48,7 +48,7 @@ function Header({ pendingCount }) {
   return (
     <header style={{ background: '#1a2236', color: '#fff', padding: '1.25rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <span style={{ fontWeight: 700, fontSize: 20, opacity: 0.85 }}>Floki</span>
-      <span style={{ fontWeight: 800, fontSize: 22 }}>{`Hotel • ${title}`}</span>
+      <span style={{ fontWeight: 800, fontSize: 22 }}>{`FoodLoki (FLoki) • ${title}`}</span>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
         <nav style={navStyle}>
           <NavLink to="/" style={linkStyle} end>Make Sale</NavLink>
@@ -154,7 +154,8 @@ function App() {
         )}
         <header style={{ background: '#1a2236', color: '#fff', padding: '1.25rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <span style={{ fontWeight: 700, fontSize: 20, opacity: 0.85 }}>Floki</span>
-          <span style={{ fontWeight: 800, fontSize: 22 }}>Hotel • Staff Login</span>
+          <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 80, margin: '0 auto 18px', display: 'block' }} />
+          <span style={{ fontWeight: 800, fontSize: 22 }}>FoodLoki (FLoki) • Staff Login</span>
           <span />
         </header>
         <main style={{ maxWidth: 420, margin: '2rem auto', padding: '0 1rem' }}>
@@ -202,7 +203,7 @@ function App() {
         </div>
       </main>
       <footer style={{ textAlign: 'center', color: '#8a8fa3', padding: 24, fontSize: 13 }}>
-        © {new Date().getFullYear()} Floki Hotel Staff
+        © {new Date().getFullYear()} FoodLoki (FLoki) Staff
       </footer>
     </div>
   );
@@ -260,7 +261,7 @@ function HotelSettings() {
 
   return (
     <div style={{ maxWidth: 720, margin: '1rem auto' }}>
-      <h2 style={{ marginTop: 0, color: '#1a2236' }}>Hotel Settings</h2>
+      <h2 style={{ marginTop: 0, color: '#1a2236' }}>FoodLoki (FLoki) Settings</h2>
       <p style={{ color: '#6a708a' }}>Configure available utensils and condiments for client orders. Leave a list empty to hide it.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
         <div>

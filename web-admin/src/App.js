@@ -41,6 +41,7 @@ function App() {
     return (
       <div style={{ fontFamily: 'Inter, Arial, sans-serif', background: '#f7f7fa', minHeight: '100vh', display: 'grid', placeItems: 'center' }}>
         <form onSubmit={handleLogin} style={{ background: '#fff', borderRadius: 12, boxShadow: '0 2px 16px #0001', padding: '2rem', width: '92vw', maxWidth: 420 }}>
+          <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 80, margin: '0 auto 18px', display: 'block' }} />
           <h2 style={{ marginTop: 0, color: '#1a2236' }}>Admin Sign In</h2>
           {authErr && <div style={{ color: 'crimson', marginBottom: 8 }}>{authErr}</div>}
           <div style={{ marginBottom: 10 }}>
@@ -59,7 +60,7 @@ function App() {
   return (
     <div style={{ fontFamily: 'Inter, Arial, sans-serif', background: '#f7f7fa', minHeight: '100vh' }}>
       <header style={{ background: '#1a2236', color: '#fff', padding: '1.5rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <span style={{ fontWeight: 700, fontSize: 28 }}>Floki's Hotel - Admin</span>
+        <span style={{ fontWeight: 700, fontSize: 28 }}>FoodLoki (FLoki) - Admin</span>
         <nav style={{ display: 'flex', gap: '0.5rem' }}>
           <button onClick={() => setTab('staff')} style={{ padding: '8px 12px', borderRadius: 8, border: 'none', background: tab === 'staff' ? '#ffb300' : '#2d3a58', color: '#fff', fontWeight: 700 }}>Staff</button>
           <button onClick={() => setTab('orders')} style={{ padding: '8px 12px', borderRadius: 8, border: 'none', background: tab === 'orders' ? '#ffb300' : '#2d3a58', color: '#fff', fontWeight: 700 }}>Orders</button>
@@ -84,7 +85,7 @@ function App() {
         {/* Seeding UI removed */}
       </main>
       <footer style={{ textAlign: 'center', color: '#888', padding: 24, fontSize: 15 }}>
-        &copy; {new Date().getFullYear()} Floki's Hotel. All rights reserved.
+        &copy; {new Date().getFullYear()} FoodLoki (FLoki). All rights reserved.
       </footer>
     </div>
   );
