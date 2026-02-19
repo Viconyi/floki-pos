@@ -474,9 +474,9 @@ function SignInPage({ onSignIn, onSignUp, onResetPin }) {
       background: '#f7f7fa',
       position: 'relative'
     }}>
-      <div style={{ color: '#1a2236', fontWeight: 800, fontSize: 30, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', textAlign: 'center' }}>Floki's</div>
+      <div style={{ color: '#1a2236', fontWeight: 800, fontSize: 30, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', textAlign: 'center' }}>FoodLoki (FLoki)</div>
       <div style={cardStyle}>
-        <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 80, margin: '0 auto 18px', display: 'block' }} />
+        <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 100, margin: '0 auto 18px', display: 'block' }} />
         <div style={titleStyle}>{mode === 'signin' ? 'Login' : mode === 'signup' ? 'Register' : 'Reset PIN'}</div>
         <form onSubmit={submit}>
           {mode === 'signup' && !awaitingCode && (
