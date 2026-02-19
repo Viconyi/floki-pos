@@ -474,7 +474,7 @@ function SignInPage({ onSignIn, onSignUp, onResetPin }) {
       background: '#f7f7fa',
       position: 'relative'
     }}>
-      <div style={{ color: '#1a2236', fontWeight: 800, fontSize: 30, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', textAlign: 'center' }}>FoodLoki (FLoki)</div>
+      <div style={{ color: '#1a2236', fontWeight: 800, fontSize: 30, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', textAlign: 'center' }}>FoodLoki</div>
       <div style={cardStyle}>
         <img src={process.env.PUBLIC_URL + '/FoodLoki.png'} alt="FoodLoki Logo" style={{ width: 100, margin: '0 auto 18px', display: 'block' }} />
         <div style={titleStyle}>{mode === 'signin' ? 'Login' : mode === 'signup' ? 'Register' : 'Reset PIN'}</div>
@@ -1047,7 +1047,7 @@ function App() {
       }} />
       <div style={{ position: 'relative', zIndex: 1, height: '100vh', overflow: 'hidden' }}>
         <header style={{ position: 'fixed', top: 0, left: 0, width: '100vw', maxWidth: '100vw', background: 'rgba(26,34,54,0.98)', color: '#fff', padding: '1.2rem 1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', boxShadow: '0 2px 16px #0003', zIndex: 10, borderRadius: 0, fontSize: '1.2rem', flexWrap: 'wrap', boxSizing: 'border-box', overflow: 'hidden' }}>
-          <span style={{ fontWeight: 700, fontSize: 24, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', flexShrink: 0 }}>Floki's</span>
+          <span style={{ fontWeight: 700, fontSize: 24, letterSpacing: 0.5, fontFamily: 'system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif', flexShrink: 0 }}>FoodLoki</span>
           <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 18, marginRight: '0.5cm' }}>
             <nav style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-end', gap: 18, fontSize: 18, flexShrink: 1, minWidth: 0 }}>
               <button onClick={() => setPage('menu')} style={{ background: page === 'menu' ? '#ffb300' : 'transparent', color: page === 'menu' ? '#222' : '#fff', border: 'none', fontWeight: 600, cursor: 'pointer', fontSize: 18, padding: '8px 14px', borderRadius: 8, transition: 'background 0.2s', whiteSpace: 'nowrap', minWidth: 0 }}>Menu</button>

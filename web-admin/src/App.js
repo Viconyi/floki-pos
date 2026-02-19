@@ -60,7 +60,7 @@ function App() {
   return (
     <div style={{ fontFamily: 'Inter, Arial, sans-serif', background: '#f7f7fa', minHeight: '100vh' }}>
       <header style={{ background: '#1a2236', color: '#fff', padding: '1.5rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <span style={{ fontWeight: 700, fontSize: 28 }}>FoodLoki (FLoki) - Admin</span>
+        <span style={{ fontWeight: 700, fontSize: 28 }}>FoodLoki - Admin</span>
         <nav style={{ display: 'flex', gap: '0.5rem' }}>
           <button onClick={() => setTab('staff')} style={{ padding: '8px 12px', borderRadius: 8, border: 'none', background: tab === 'staff' ? '#ffb300' : '#2d3a58', color: '#fff', fontWeight: 700 }}>Staff</button>
           <button onClick={() => setTab('orders')} style={{ padding: '8px 12px', borderRadius: 8, border: 'none', background: tab === 'orders' ? '#ffb300' : '#2d3a58', color: '#fff', fontWeight: 700 }}>Orders</button>
@@ -85,7 +85,8 @@ function App() {
         {/* Seeding UI removed */}
       </main>
       <footer style={{ textAlign: 'center', color: '#888', padding: 24, fontSize: 15 }}>
-        &copy; {new Date().getFullYear()} FoodLoki (FLoki). All rights reserved.
+        &copy; {new Date().getFullYear()} FoodLoki. All rights reserved.<br />
+        Contact: <a href="tel:+254759424562" style={{ color: '#888' }}>+254759424562</a>
       </footer>
     </div>
   );
