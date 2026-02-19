@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "mpesa-node": "^0.1.3"
+  }
+}

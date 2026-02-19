@@ -1,0 +1,106 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "backend:dev",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location backend; npm run dev; Pop-Location"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend:web-client",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location web-client; npm start; Pop-Location"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend:web-client-3001",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location web-client; $env:PORT=3001; npm start; Pop-Location"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend:web-hotel",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location web-hotel; $env:PORT=3002; npm start; Pop-Location"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "frontend:web-hotel",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location web-hotel; $env:PORT=3002; npm start; Pop-Location"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "frontend:web-admin",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location web-admin; npm start; Pop-Location"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "frontend:web-admin",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Push-Location web-admin; npm start; Pop-Location"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
